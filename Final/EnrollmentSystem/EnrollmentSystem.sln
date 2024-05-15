@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnrollmentSystem", "EnrollmentSystem\EnrollmentSystem.csproj", "{EDFC6C3D-A248-4A91-98D6-BF5B1FF05817}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDFC6C3D-A248-4A91-98D6-BF5B1FF05817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDFC6C3D-A248-4A91-98D6-BF5B1FF05817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDFC6C3D-A248-4A91-98D6-BF5B1FF05817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDFC6C3D-A248-4A91-98D6-BF5B1FF05817}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C6019BB-7A38-4801-BBD3-EFE5D1B8AEED}
+	EndGlobalSection
+EndGlobal
