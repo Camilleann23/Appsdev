@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EDFC6C3D-A248-4A91-98D6-BF5B1FF05817}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EnrollmentSystem</RootNamespace>
+    <AssemblyName>EnrollmentSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EnrollmentEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnrollmentEntryForm.Designer.cs">
+      <DependentUpon>EnrollmentEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menufinal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menufinal.Designer.cs">
+      <DependentUpon>menufinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectEntry.Designer.cs">
+      <DependentUpon>SubjectEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubjectScheduleEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectScheduleEntry.Designer.cs">
+      <DependentUpon>SubjectScheduleEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectScheduleForm.Designer.cs">
+      <DependentUpon>SubjectScheduleForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EnrollmentEntryForm.resx">
+      <DependentUpon>EnrollmentEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menufinal.resx">
+      <DependentUpon>menufinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectEntry.resx">
+      <DependentUpon>SubjectEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SubjectScheduleEntry.resx">
+      <DependentUpon>SubjectScheduleEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectScheduleForm.resx">
+      <DependentUpon>SubjectScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD-wallpaper-one-piece-android-anime-japan-logo-manga-pirates-thumbnail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner-university-of-cebu-1786x642-2022.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1024px-University-of-Cebu-Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51909656246_8ed252300d_b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\design-chuigraf-14-805x537.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hogwarts_animation_hd_movies.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-174926446-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\134-1342850_logo-harry-potter-hogwarts-png-download-logo-hogwarts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\134-1342850_logo-harry-potter-hogwarts-png-download-logo-hogwarts1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4591308964_3372be6de0_b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51909656246_8ed252300d_b1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
